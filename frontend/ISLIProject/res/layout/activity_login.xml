@@ -1,0 +1,81 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+       
+        android:layout_alignParentTop="true" >
+
+       
+
+        
+  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            
+            android:gravity="center"
+            android:orientation="vertical" >
+         <TextView
+            android:id="@+id/rcc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:text="ISLI Project"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#eb0000" />
+        
+
+        
+
+        <View
+            android:layout_width="325dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/darker_gray" />
+
+     
+      
+
+        <EditText
+            android:id="@+id/usern"
+            android:layout_width="325dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+           
+            android:ems="10"
+            android:hint="User Name"
+            android:inputType="text"
+            android:paddingLeft="5dp" />
+
+
+        <EditText
+            android:id="@+id/passw"
+            android:layout_width="325dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+       
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+      
+
+
+       
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="325dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+             android:text="Login"></Button>
+    </LinearLayout>
+</ScrollView>
