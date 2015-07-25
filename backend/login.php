@@ -1,19 +1,19 @@
 <?php
-$con=mysqli_connect("http://ec2-52-69-3-144.ap-northeast-1.compute.amazonaws.com/","root","code4good","mysql");
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
+$con=mysqli_connect("localhost","root","code4good","isli") or die("dead");
 
-if (mysqli_connect_errno($con))
-{
-   echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
-$username = 'p';
+$username='p';
 $password = 'p';
-$result = mysqli_query($con,"SELECT Role FROM Login where
-username='$username' and password='$password'");
+$result = mysqli_query($con,"SELECT type FROM Login where username='$username'");
+
 $row = mysqli_fetch_array($result);
+
 $data = $row[0];
 
-if($data){
-echo 'Login successful';
+if($data= "leader"){
+echo "done";
 }
 mysqli_close($con);
 ?>
