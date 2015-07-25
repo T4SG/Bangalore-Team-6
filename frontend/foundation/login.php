@@ -1,5 +1,10 @@
 <?php
-$con=mysqli_connect("http://ec2-52-69-3-144.ap-northeast-1.compute.amazonaws.com/","root","code4good","mysql");
+$server = "http://ec2-52-69-3-144.ap-northeast-1.compute.amazonaws.com/";
+$user = "root";
+$pwd = "code4good";
+$dbname = "isli";
+$con=mysqli_connect($server,$user,$pwd);
+mysqli_select_db($dbname);
 
 if (mysqli_connect_errno($con))
 {
