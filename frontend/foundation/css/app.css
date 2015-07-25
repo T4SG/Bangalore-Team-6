@@ -1,0 +1,99 @@
+.student-details {
+	color: #F18446;
+	background-color: #393939;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.student-details a {
+	color: #F18446;
+}
+.year1-marks-details {
+	color: #F18446;
+	background-color: #474747;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.year2-marks-details {
+	color: #F18446;
+	background-color: #575757; 
+}
+.nav-bar {
+    color: #E6E6E6;
+    background-color: #2E2E2E;
+    text-align: center;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+
+.nav-bar .title {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 3em;
+}
+
+.nav-bar a,
+.nav-bar a label{
+	color: #E6E6E6;
+}
+
+@media only screen and (max-width: 40em) { 
+	.nav-bar .title {
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-size: 1em;
+	}
+
+}
+
+
+.main-heading {
+	font-size: 4em;
+    color: #E6E6E6;
+    background-color: #2E2E2E;
+    text-align: center;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.subheading {
+	font-family: 'Roboto Slab', sans-serif;
+	color: #E6E6E6;
+}
+
+.marks-subheading {
+	font-family: 'Roboto Slab', sans-serif;
+	color: #E6E6E6;
+	text-align: center;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.info {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	color: #E6E6E6;
+}
+
+.roll-number label {
+	font-size: 2em;
+	color: #E6E6E6;
+}
+
+.student-details button {
+	color: #F18446;
+	background-color: #393939;
+}
+
+input[type="text"],
+input[type="number"],
+button[type="button"]{
+	background-color: #6E6E6E;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    /*color: #FFF;*/
+}
