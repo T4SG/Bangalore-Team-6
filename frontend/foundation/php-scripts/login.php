@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
@@ -11,7 +12,7 @@ $result = mysqli_query($con,"SELECT type FROM Login where username='$username'")
 $row = mysqli_fetch_array($result);
 
 $data = $row[0];
-
+$_SESSION["username"]=$username;
 if($data == "leader"){
 header("Location: http://ec2-52-69-3-144.ap-northeast-1.compute.amazonaws.com/leaderprofile.html");
 }
