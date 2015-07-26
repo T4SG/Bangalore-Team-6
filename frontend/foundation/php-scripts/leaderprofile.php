@@ -154,11 +154,11 @@ echo $row['comments'];
               <p><strong>Priority 2</strong>Toilets and water</p>
               <h6>%n Comments</h6>
               <div class="row">
-                <div class="large-2 columns small-3">time: 12:12</div>
+                
                 <div class="large-10 columns"></div>
               </div>
               <div class="row">
-                <div class="large-2 columns small-3">time: 12:12</div>
+                
                 <div class="large-10 columns"></div>
               </div>
               <div class="row">
