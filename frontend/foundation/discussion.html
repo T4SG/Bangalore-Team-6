@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussion</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+     <div class="row">
+        <div class="large-12 columns center">
+          <div class="panel">
+            <h1 style="text-align:center;">Leader Discussion</h1>
+          </div>
+        </div>
+      </div>
+       
+
+
+    <form action="./php-scripts/discussionfeedback.php" method="post">
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Weaknesses
+            <textarea name="q1" placeholder="Enter your feedback"></textarea>
+          </label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Strengths
+            <textarea name="q2" placeholder="Enter your feedback"></textarea>
+          </label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+            <label>Priority 1 &raquo;</label>
+            <select>
+              <option value="teach">Teaching</option>
+              <option value="infra">Infrastructure</option>
+              <option value="lead">Leading</option>
+              <option value="nill">None</option>
+            </select>
+            <textarea name="q2" placeholder="Aims(50 words)"></textarea>
+          </div>
+          <div class="large-4 columns">
+            <label>Priority 2 &raquo;</label>
+            <select>
+              <option value="teach">Teaching</option>
+              <option value="infra">Infrastructure</option>
+              <option value="lead">Leading</option>
+              <option value="nill">None</option>
+            </select>
+            <textarea name="q2" placeholder="Aims(50 words)"></textarea>
+          </div>
+          <div class="large-4 columns">
+            <label>Priority 3 &raquo;</label>
+            <select>
+              <option value="teach">Teaching</option>
+              <option value="infra">Infrastructure</option>
+              <option value="lead">Leading</option>
+              <option value="nill">None</option>
+            </select>
+            <textarea name="q2" placeholder="Aims(50 words)"></textarea>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Next steps
+            <textarea name="q5" placeholder="Enter your feedback"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="submit" name="submit" class="button">
+        </div>
+    </form>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

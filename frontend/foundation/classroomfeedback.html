@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classroom Feedback</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+     <div class="row">
+        <div class="large-12 columns center">
+          <div class="panel">
+            <h1 style="text-align:center;">ISLI Classroom Feedback</h1>
+          </div>
+        </div>
+      </div>
+       
+
+
+    <form action="./php-scripts/classroomfeedback.php" method="post">
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Teacher actions in class :
+            <textarea name="q1" placeholder="Enter your feedback"></textarea>
+          </label>
+          <label>Quality Measure (1-5)</label>
+            <input type="radio" name="q6"><label>1</label>
+            <input type="radio" name="q6"><label>2</label>
+            <input type="radio" name="q6"><label>3</label>
+            <input type="radio" name="q6"><label>4</label>
+            <input type="radio" name="q6"><label>5</label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Student actions in class :
+            <textarea name="q2" placeholder="Enter your feedback"></textarea>
+          </label>
+          <label>Quality Measure (1-5)</label>
+            <input type="radio" name="q6"><label>1</label>
+            <input type="radio" name="q6"><label>2</label>
+            <input type="radio" name="q6"><label>3</label>
+            <input type="radio" name="q6"><label>4</label>
+            <input type="radio" name="q6"><label>5</label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>What teacher is doing well
+            <textarea name="q3" placeholder="Enter your feedback"></textarea>
+          </label>
+          <label>Quality Measure (1-5)</label>
+            <input type="radio" name="q6"><label>1</label>
+            <input type="radio" name="q6"><label>2</label>
+            <input type="radio" name="q6"><label>3</label>
+            <input type="radio" name="q6"><label>4</label>
+            <input type="radio" name="q6"><label>5</label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>What teacher can do better
+            <textarea name="q4" placeholder="Enter your feedback"></textarea>
+          </label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Next steps
+            <textarea name="q5" placeholder="Enter your feedback"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Overall Quality Measure (1-5)</label>
+            <input type="radio" name="q6"><label>1</label>
+            <input type="radio" name="q6"><label>2</label>
+            <input type="radio" name="q6"><label>3</label>
+            <input type="radio" name="q6"><label>4</label>
+            <input type="radio" name="q6"><label>5</label>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="submit" name="submit" class="button">
+        </div>
+      </div>
+    </form>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
