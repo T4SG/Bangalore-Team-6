@@ -14,7 +14,7 @@ $row = mysqli_fetch_array($result);
 $data = $row[0];
 $_SESSION["username"]=$username;
 if($data == "leader"){
-header("Location: http://ec2-52-69-3-144.ap-northeast-1.compute.amazonaws.com/leaderprofile.php");
+header("Location: http://ec2-52-69-3-144.ap-northeast-1.compute.amazonaws.com/leaderprofile.html");
 }
 else if($data == "isli")
 {

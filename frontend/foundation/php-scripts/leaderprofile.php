@@ -1,9 +1,9 @@
 <?php
 @session_start();
-echo "working";
-ini_set('display_errors',1);
+
+/*ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
-error_reporting(-1);
+error_reporting(-1);*/
 $con=mysqli_connect("localhost","root","code4good","isli") or die("dead");
 
 $name = $_SESSION['username'];
@@ -27,7 +27,7 @@ $result= mysqli_query($con, $query1);
 
 
 
-echo '<html class="no-js" lang="en">
+/*echo '<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,29 +50,13 @@ echo '<html class="no-js" lang="en">
        
       <div class="row">
       
-         
-        <div class="large-3 columns ">
-          <div class="panel">
-            <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
-            <h5><a href="#">Leader id : 123</a></h5>
-              <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-              <section class="section">
-                <h5 class="title"><a href="#">View School Feedback</a></h5>
-              </section>
-              <section class="section">
-                <h5 class="title"><a href="#">Submit Workshop Feedback </a></h5>
-              </section>
-              <section class="section">
-                <h5 class="title"><a href="#">View Leader-board</a></h5>
-              </section>
-            </div>
-     
-          </div>
-        </div>
-        
+       
          
          
         <div class="large-6 columns">
+     
+           
+         <div class="large-6 columns">
      
            
           <div class="row">
@@ -81,11 +65,11 @@ echo '<html class="no-js" lang="en">
               <p><strong>Priority 1</strong>Infrastructure Management.</p>
              
               <div class="row">
-                <div class="large-10 columns"><p>Toilet and water</p></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p></div>
               </div>
               <div class="row">
                 <div class="large-2 columns small-3">time: 12:12</div>
-                <div class="large-10 columns"><p>School Display</p></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p></div>
               </div>
               <div class="row">
                 <form method="post" action="./php-scripts/leaderprofile.php">
@@ -103,70 +87,70 @@ echo '<html class="no-js" lang="en">
               </div>
           </div>
            
+           
      
           <hr/>
+     
+           
+          <div class="large-6 columns">
      
            
           <div class="row">
             <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
             <div class="large-10 columns">
-              <p><strong>Priority 1</strong></p>
-              <h6>%n Comments</h6>
+              <p><strong>Priority 1</strong>Infrastructure Management.</p>
+             
               <div class="row">
-                
-                <div class="large-10 columns"></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p></div>
               </div>
               <div class="row">
-                
-                <div class="large-10 columns">';
-				while($row = mysqli_fetch_array($result,MYSQLI_BOTH))
+                <div class="large-2 columns small-3">time: 12:12</div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p></div>
+              </div>
+              <div class="row">
+                <form method="post" action="./php-scripts/leaderprofile.php">
+                  <div class="large-10 columns">
+                    <div class="row collapse">
+                      <div class="small-8 columns">
+                        <input type="text" name="content" placeholder="Enter a comment">
+                      </div>
+                      <div class="small-4 columns">
+                        <input type="submit" class="button postfix">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>';
+           
+	*/			while($row = mysqli_fetch_array($result,MYSQLI_BOTH))
 {
 echo $row['name'];
+echo <br>;
 echo $row['comments'];	
 }
 				
-				echo '</div>
-              </div>
-              <div class="row">
-                <form method="post">
-                  <div class="large-10 columns">
-                    <div class="row collapse">
-                      <div class="small-8 columns">
-                        <input type="text" placeholder="Enter a comment">
-                      </div>
-                      <div class="small-4 columns">
-                        <input type="submit" class="button postfix">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-           
-     
-          <hr/>
+		/*		echo ' <div class="large-6 columns">
      
            
           <div class="row">
             <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
             <div class="large-10 columns">
-              <p><strong>Priority 2</strong>Toilets and water</p>
-              <h6>%n Comments</h6>
+              <p><strong>Priority 1</strong>Infrastructure Management.</p>
+             
               <div class="row">
-                
-                <div class="large-10 columns"></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p></div>
               </div>
               <div class="row">
-                
-                <div class="large-10 columns"></div>
+                <div class="large-2 columns small-3">time: 12:12</div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p></div>
               </div>
               <div class="row">
-                <form method="post">
+                <form method="post" action="./php-scripts/leaderprofile.php">
                   <div class="large-10 columns">
                     <div class="row collapse">
                       <div class="small-8 columns">
-                        <input type="text" placeholder="Enter a comment">
+                        <input type="text" name="content" placeholder="Enter a comment">
                       </div>
                       <div class="small-4 columns">
                         <input type="submit" class="button postfix">
@@ -175,11 +159,8 @@ echo $row['comments'];
                   </div>
                 </form>
               </div>
-            </div>
           </div>
-        </div>
-     
-         
+      
          
         <!-- <aside class="large-3 columns hide-for-small">
           <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
@@ -211,7 +192,7 @@ echo $row['comments'];
   </body>
 </html>';
 
-
+*/
 mysqli_close($con);
 
 ?>
