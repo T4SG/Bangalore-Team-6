@@ -32,10 +32,10 @@ echo '<html class="no-js" lang="en">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leader Profile</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css">
+    <script src="../js/vendor/modernizr.js"></script>
   </head>
   <body>
            
@@ -110,14 +110,14 @@ echo '<html class="no-js" lang="en">
           <div class="row">
             <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
             <div class="large-10 columns">
-              <p><strong>Priority 1</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <p><strong>Priority 1</strong></p>
               <h6>%n Comments</h6>
               <div class="row">
-                <div class="large-2 columns small-3">time: 12:12</div>
-                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+                
+                <div class="large-10 columns"></div>
               </div>
               <div class="row">
-                <div class="large-2 columns small-3">time: 12:12</div>
+                
                 <div class="large-10 columns">';
 				while($row = mysqli_fetch_array($result,MYSQLI_BOTH))
 {
@@ -151,15 +151,15 @@ echo $row['comments'];
           <div class="row">
             <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
             <div class="large-10 columns">
-              <p><strong>Priority 1</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <p><strong>Priority 2</strong>Toilets and water</p>
               <h6>%n Comments</h6>
               <div class="row">
                 <div class="large-2 columns small-3">time: 12:12</div>
-                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+                <div class="large-10 columns"></div>
               </div>
               <div class="row">
                 <div class="large-2 columns small-3">time: 12:12</div>
-                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+                <div class="large-10 columns"></div>
               </div>
               <div class="row">
                 <form method="post">
@@ -203,8 +203,8 @@ echo $row['comments'];
       </footer>
     
     
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
